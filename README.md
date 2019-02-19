@@ -1,12 +1,13 @@
-# mail
-发送邮件，参考phpmailer/phpmailer
-#使用方法
+# mail  
+发送邮件，参考phpmailer/phpmailer  
+#使用方法  
 use Zzx\mail\PHPMailer;  
 use Zzx\mail\Exception;  
 引入vendor类  
 实例化 $mail = new PHPMailer(true);  
 ```
-	try {
+	try {  
+    		$mail->CharSet  = 'UTF-8'; //设定邮件编码，默认ISO-8859-1，如果发中文此项必须设置，否则乱码  
             //Server settings
             //Enable SMTP debugging
             // 0 = off (for production use)
